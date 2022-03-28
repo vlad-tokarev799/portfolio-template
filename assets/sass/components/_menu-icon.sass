@@ -1,0 +1,30 @@
+.menu-icon
+  flex-direction: column
+  display: none
+  position: relative
+  width: 30px
+  height: 27px
+.menu-icon__item
+  display: block
+  width: 30px
+  height: 3px
+  background: $text-color1
+  margin: 3px 0
+  transition: .1s
+
+.menu-icon.active
+  .menu-icon__item
+    position: absolute
+    margin: 0
+  .menu-icon__item:nth-child(1)
+    top: 12px
+    transform: rotate(45deg)
+  .menu-icon__item:nth-child(2)
+    opacity: 0
+  .menu-icon__item:nth-child(3)
+    bottom: 12px
+    transform: rotate(-45deg)
+
+@media (max-width: 768px)
+  .menu-icon
+    display: flex

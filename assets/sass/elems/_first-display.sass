@@ -1,0 +1,98 @@
+.first-display__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  padding-top: 88px
+
+.first-display__title
+  font-weight: 700
+  font-size: 47.3392px
+  line-height: 59px
+  color: $dark-text
+  margin: 30px 0 0
+
+.first-display__info
+  display: flex
+  flex-direction: column
+
+.first-display__info-item
+  font-weight: 500
+  font-size: 18px
+  line-height: 0px
+  color: $dark-text
+  margin: 0 0 22px
+
+.first-display__lang-switch-wrapper
+  margin-left: 50px
+
+.first-display__lang-switch
+  font-weight: 500
+  font-size: 16px
+  line-height: 20px
+  color: $text-color1
+  transform: rotate(-90deg)
+  white-space: nowrap
+  width: 20px
+  margin-bottom: 13px
+
+.first-display__lang
+  color: #000000
+  text-decoration: none
+.first-display__lang_active, .first-display__lang:hover
+  color: #000000
+  font-weight: 700
+
+.first-display__lang-switch-line
+  color: #000000
+  cursor: default
+  font-weight: 700
+
+.first-display__image-wrapper
+  margin-top: 40px
+
+@media (max-width: 1170px)
+  .first-display__title
+    margin-top: 10px
+    font-size: 42px
+    line-height: 49px
+  .first-display__lang-switch-wrapper
+    margin-left: 30px
+
+  .first-display__image
+    width: 100%
+@media (max-width: 768px)
+  .first-display__title
+    margin-top: 0
+  .first-display__lang-switch-wrapper
+    margin: 0
+
+  .first-display__image-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 303px
+    overflow: hidden
+  .first-display__image
+    height: 100%
+    width: auto
+
+@media (max-width: 480px)
+  .first-display__wrapper
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+  .first-display__title
+    line-height: 45px
+    margin: 0px 0 25px
+
+  .first-display__lang-switch
+    transform: rotate(0)
+  .first-display__lang-switch
+    width: auto
+    font-size: 18px
+    margin-top: 5px
+
+  .first-display__image-wrapper
+    margin-top: 10px
+    height: 260px

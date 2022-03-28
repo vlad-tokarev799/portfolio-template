@@ -1,0 +1,85 @@
+.skills
+  padding: 58px 0 116px
+
+.skills__title
+  margin-bottom: 55px
+
+.skills__items
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  margin-top: 90px
+
+.skills__item
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 166.5px
+
+.skills__item-image
+  height: 90px
+
+.skills__item-name
+  color: $text-color1
+  font-weight: 700
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  margin-top: 19px
+  margin-bottom: 40px
+  height: 34px
+
+.skills__item-rating
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.skills__item-rating_1
+  .skills__item-star:nth-child(-n+1)
+      fill: $dark-text
+.skills__item-rating_2
+  .skills__item-star:nth-child(-n+2)
+    fill: $dark-text
+.skills__item-rating_3
+  .skills__item-star:nth-child(-n+3)
+    fill: $dark-text
+.skills__item-rating_4
+  .skills__item-star:nth-child(-n+4)
+    fill: $dark-text
+.skills__item-rating_5
+  .skills__item-star:nth-child(-n+5)
+    fill: $dark-text
+
+@media (max-width: 1170px)
+  .skills
+    padding: 45px 0 90px
+  .skills__title
+    margin-bottom: 35px
+  .skills__items
+    margin-top: 60px
+    flex-wrap: wrap
+  .skills__item
+    width: 140px
+  .skills__item-image
+    height: 80px
+  .skills__item-name
+    margin-bottom: 20px
+@media (max-width: 768px)
+  .skills
+    padding: 30px 0 70px
+  .skills__title
+    margin-bottom: 30px
+  .skills__items
+    margin-top: 50px
+  .skills__item
+    width: 50%
+    box-sizing: border-box
+    margin-bottom: 20px
+  .skills__item-rating
+    width: 140px
+
+@media (max-width: 360px)
+  .skills__item-rating
+    width: 110px
+  .skills__item-image
+    height: 70px

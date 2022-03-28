@@ -1,0 +1,58 @@
+.footer-links
+  padding-top: 3px
+  padding-bottom: 124px
+
+.footer-links__icons
+  display: flex
+  justify-content: center
+  width: 100%
+
+.footer-links__link
+  font-size: 41px
+  text-decoration: none
+  color: #000000
+  margin: 0 30px
+  transition: .1s
+  &:hover
+    color: $text-color1
+
+.footer-links__text
+  margin-top: 38px
+
+.footer-links__title
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: $text-color1
+  margin-bottom: 0
+
+.footer-links__items
+  display: flex
+  justify-content: center
+
+.footer-links__item
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: $text-color1
+  text-decoration: none
+  margin: 0 2px
+  &:hover
+    text-decoration: underline
+  &:last-child
+    &:after
+      content: ''
+  &:after
+    content: ', '
+
+
+@media (max-width: 768px)
+  .footer-links
+    padding-bottom: 60px
+  .footer-links__icons
+    flex-wrap: wrap
+  .footer-links__link
+    font-size: 35px
+    margin: 0 15px
