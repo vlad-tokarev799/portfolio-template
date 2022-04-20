@@ -1,0 +1,37 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-cli": "^2.3.0",
+    "gulp-group-css-media-queries": "*",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "*",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "*",
+    "gulp-rigger": "*",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-css-comments": "*",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "*",
+    "imagemin-jpeg-recompress": "^7.0.0",
+    "panini": "*",
+    "sass": "^1.49.7"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.9"
+  }
+}
